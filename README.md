@@ -19,8 +19,10 @@ When executed successfully, the generated output should qualitatively reproduce 
 git clone https://github.com/<YOUR_USERNAME>/TwinRNN.git
 cd TwinRNN
 ```
+### 2. Set up the environment
+Configure the environment using either Docker (recommended), pip, or conda. For details, see below.
 
-### 2. Launch Jupyter
+### 3. Launch Jupyter
 
 Always launch Jupyter from the repository root directory so relative paths resolve correctly.
 
@@ -100,8 +102,8 @@ Activate it and Launch Jupyter
 The notebook should:
 
 1. Load the pretrained Twin RNN model from `RNN_models/`
-2. Run the model under perturbations
-3. Display model activity
+2. Run the model under perturbation conditions
+3. Display the resulting network activity
 
 ---
 
