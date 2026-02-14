@@ -4,8 +4,8 @@ This repository contains code associated with the paper:
 
 **“Independence and Coherence in Temporal Sequence Computation across the Fronto-Parietal Network.”**
 
-The main entry point is a Jupyter notebook that loads a pretrained Twin RNN model (stored in `RNN_models/`) and reproduces activity/response visualizations under perturbation.
-The output should look similar to that in Fig. 5K. 
+The main entry point is a Jupyter notebook that loads a pretrained Twin RNN model (stored in `RNN_models/`) and reproduces activity under perturbation.
+When executed successfully, the generated output should qualitatively reproduce the activity pattern shown in **Figure 5K** of the paper.
 
 
 
