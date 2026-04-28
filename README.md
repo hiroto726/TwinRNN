@@ -65,6 +65,8 @@ Notes:
 
 ### Option B: pip (Local Python Environment)
 
+Use Python 3.6 or 3.7. TensorFlow 2.1.0 does not provide wheels for newer Python versions such as Python 3.11.
+
 Create a virtual environment:
 
 ```bash
@@ -100,6 +102,8 @@ conda activate twinrnn
 jupyter notebook
 ```
 
+On Windows, if directly running the environment's `python.exe` gives NumPy/MKL DLL errors, run commands from an activated conda prompt or use `conda run -n twinrnn ...`.
+
 ---
 
 ## Expected Output
@@ -114,13 +118,29 @@ The notebook imports helper code from `functions/`.
 
 ---
 
+## Optional Validation
+
+To execute the notebook from the command line and confirm that all cells run:
+
+```bash
+jupyter nbconvert --to notebook --execute notebooks/visualize_activity.ipynb --output visualize_activity.executed.ipynb --output-dir notebooks --ExecutePreprocessor.timeout=3600
+```
+
+Generated validation notebooks and figures matching `notebooks/*.executed.ipynb` and `notebooks/*.figure.png` are ignored by Git.
+
+---
+
 ## Important Notes
 
 - Tested with:
   - Python 3.6.13 (`myRNN3`) and Python 3.7-compatible environment files
   - TensorFlow 2.1.0
   - Keras 2.3.1
+  - NumPy 1.18.5
+  - SciPy 1.4.1
+  - Protobuf 3.20.3
 - If running outside Docker, use Python 3.6 or 3.7.
+- GPU is optional for the demo notebook. Without CUDA 10.1 and cuDNN 7, TensorFlow 2.1.0 should fall back to CPU.
 - Always run notebooks from the repository root directory.
 
 ---

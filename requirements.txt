@@ -1,7 +1,10 @@
+# Requires Python 3.6 or 3.7; TensorFlow 2.1.0 does not provide wheels
+# for newer Python versions.
 tensorflow==2.1.0
 keras==2.3.1
-numpy
-scipy
+numpy==1.18.5
+scipy==1.4.1
+protobuf==3.20.3
 matplotlib
 scikit-learn
 jupyter

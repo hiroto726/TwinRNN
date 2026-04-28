@@ -4,8 +4,9 @@ channels:
   - conda-forge
 dependencies:
   - python=3.7
-  - numpy
-  - scipy
+  - numpy=1.18.5
+  - scipy=1.4.1
+  - mkl-service
   - matplotlib
   - scikit-learn
   - jupyter
@@ -14,3 +15,4 @@ dependencies:
   - pip:
       - tensorflow==2.1.0
       - keras==2.3.1
+      - protobuf==3.20.3

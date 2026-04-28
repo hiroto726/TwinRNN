@@ -2,4 +2,8 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .venv/
+.venv*/
+.conda*/
+notebooks/*.executed.ipynb
+notebooks/*.figure.png
 .DS_Store
