@@ -30,7 +30,17 @@ Always launch Jupyter from the repository root directory so relative paths resol
 jupyter notebook
 ```
 
-Open `notebooks/visualize_activity.ipynb` and run all cells from top to bottom.
+This starts the Jupyter server; it does not automatically open the demo notebook.
+
+### 4. Open and run the demo notebook
+
+In the Jupyter file browser, open:
+
+```text
+notebooks/visualize_activity.ipynb
+```
+
+Then run all cells from top to bottom.
 
 ---
 
@@ -56,6 +66,7 @@ jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
 ```
 
 Open the URL displayed in the terminal (it includes an access token).
+In the Jupyter file browser, open `notebooks/visualize_activity.ipynb` and run all cells.
 
 Notes:
 - Based on TensorFlow 2.1.0 GPU (CUDA 10.1 era).
@@ -85,6 +96,8 @@ Launch Jupyter:
 jupyter notebook
 ```
 
+In the Jupyter file browser, open `notebooks/visualize_activity.ipynb` and run all cells.
+
 ---
 
 ### Option C: conda
@@ -101,6 +114,8 @@ Activate it and launch Jupyter:
 conda activate twinrnn
 jupyter notebook
 ```
+
+In the Jupyter file browser, open `notebooks/visualize_activity.ipynb` and run all cells.
 
 On Windows, if directly running the environment's `python.exe` gives NumPy/MKL DLL errors, run commands from an activated conda prompt or use `conda run -n twinrnn ...`.
 
