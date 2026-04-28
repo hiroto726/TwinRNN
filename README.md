@@ -2,7 +2,7 @@
 
 This repository contains code associated with the paper:
 
-**“Independence and Coherence in Temporal Sequence Computation across the Fronto-Parietal Network.”**
+**Independence and Coherence in Temporal Sequence Computation across the Fronto-Parietal Network.**
 
 The main entry point is a Jupyter notebook that loads a pretrained Twin RNN model (stored in `RNN_models/`) and reproduces activity under perturbation.
 When executed successfully, the generated output should qualitatively reproduce the activity pattern shown in **Figure 5K** of the paper.
@@ -30,7 +30,7 @@ Always launch Jupyter from the repository root directory so relative paths resol
 jupyter notebook
 ```
 
-Open the notebook in `notebooks/` and run all cells from top to bottom.
+Open `notebooks/visualize_activity.ipynb` and run all cells from top to bottom.
 
 ---
 
@@ -93,7 +93,12 @@ Create the environment:
 conda env create -f environment.yml
 ```
 
-Activate it and Launch Jupyter
+Activate it and launch Jupyter:
+
+```bash
+conda activate twinrnn
+jupyter notebook
+```
 
 ---
 
@@ -105,15 +110,17 @@ The notebook should:
 2. Run the model under perturbation conditions
 3. Display the resulting network activity
 
+The notebook imports helper code from `functions/`.
+
 ---
 
 ## Important Notes
 
 - Tested with:
-  - Python 3.7
+  - Python 3.6.13 (`myRNN3`) and Python 3.7-compatible environment files
   - TensorFlow 2.1.0
   - Keras 2.3.1
-- If running outside Docker, ensure Python 3.7 is used.
+- If running outside Docker, use Python 3.6 or 3.7.
 - Always run notebooks from the repository root directory.
 
 ---
