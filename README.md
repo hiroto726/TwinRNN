@@ -1,4 +1,5 @@
 # TwinRNN 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19907436.svg)](https://doi.org/10.5281/zenodo.19907436)
 
 This repository contains code associated with the paper:
 
@@ -159,3 +160,5 @@ Generated validation notebooks and figures matching `notebooks/*.executed.ipynb`
 - Always run notebooks from the repository root directory.
 
 ---
+
+
